@@ -1,0 +1,9 @@
+services:
+  amazon-linux-2:
+    build: .
+    container_name: amazon-linux-2
+    tty: true
+    privileged: true
+    ports:
+      - "22222:22"
+      - "18880:80"
