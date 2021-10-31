@@ -7,3 +7,7 @@ services:
     ports:
       - "22222:22"
       - "18880:80"
+    volumes:
+      - type: bind
+        source: ./workspace
+        target: /workspace
